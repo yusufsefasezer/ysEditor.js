@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Example: WithOptions</title>
+  <link rel="stylesheet" href="../dist/css/yseditor.min.css" />
+</head>
+
+<body>
+
+  <div id="myeditor">
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam eius accusamus sapiente modi quidem voluptatibus soluta tenetur quos qui, esse hic culpa nostrum corrupti, eum, vel nihil dolores est quae?Magni quam distinctio, reprehenderit cupiditate nihil, vel consequatur tenetur mollitia placeat quasi quibusdam laboriosam neque fuga quaerat recusandae alias culpa possimus odit voluptates excepturi. Fugit totam harum, officiis! Dignissimos, magnam.</p>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet tempore harum aspernatur error, vel, odio, nulla odit doloremque optio beatae tempora ullam facilis perferendis, distinctio accusantium minus impedit! Recusandae, perferendis.Ducimus, officia! Voluptates officiis dolorem, adipisci, odio, sed cum iusto esse, recusandae voluptatem minus dicta inventore reiciendis quibusdam necessitatibus pariatur error beatae architecto expedita molestias cumque ipsam veritatis voluptatum excepturi.</p>
+  </div>
+
+  <script src="../dist/js/yseditor.min.js"></script>
+
+  <script>
+
+    var myEditor = new ysEditor({
+      wrapper: "#myeditor", // Editor wrapper
+
+      // Toolbar options
+      bottom: true,
+
+      // Content options
+      height: 250,
+      scroll: true,
+      includeContent: true,
+
+      // Footer options
+      footer: true,
+      footerText: "<i>If my doctor told me I had only six minutes to live, I wouldn't brood. I'd type a little faster.</i> <b>Isaac Asimov</b>"
+    });
+
+  </script>
+</body>
+
+</html>

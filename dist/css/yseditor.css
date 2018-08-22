@@ -1,0 +1,64 @@
+/*!
+ * yseditor - A simple and extensible web editor.
+ * Author: Yusuf SEZER <yusufsezer@mail.com>
+ * Version: v0.1.0
+ * Url: https://github.com/yusufsefasezer/ysEditor.js
+ * License: MIT
+ */
+
+/* Editor */
+/* Toolbar */
+/* Content */
+/* Footer */
+/* line 26, src/sass/yseditor.scss */
+.yseditor {
+  max-width: auto !important;
+  border: 1px solid #c4c4c4;
+}
+
+/* line 29, src/sass/yseditor.scss */
+.yseditor .yseditor-toolbar {
+  padding: 3px;
+  border-bottom: 1px solid #c4c4c4;
+  border-top: 1px solid #c4c4c4;
+  background: #fafafa;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 35, src/sass/yseditor.scss */
+.yseditor .yseditor-toolbar button {
+  padding: 10px 12px;
+  border: none;
+  background: none;
+  outline: none;
+  color: gray;
+}
+
+/* line 41, src/sass/yseditor.scss */
+.yseditor .yseditor-toolbar button:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* line 47, src/sass/yseditor.scss */
+.yseditor .yseditor-content {
+  padding: 10px;
+}
+
+/* line 50, src/sass/yseditor.scss */
+.yseditor .yseditor-footer {
+  background-color: #fafafa;
+  border-top: 1px solid #c4c4c4;
+  padding: 10px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

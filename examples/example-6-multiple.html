@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Example: Multiple</title>
+  <link rel="stylesheet" href="../dist/css/yseditor.min.css" />
+</head>
+
+<body>
+
+  <div id="yseditor">
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam eius accusamus sapiente modi quidem voluptatibus soluta tenetur quos qui, esse hic culpa nostrum corrupti, eum, vel nihil dolores est quae?Magni quam distinctio, reprehenderit cupiditate nihil, vel consequatur tenetur mollitia placeat quasi quibusdam laboriosam neque fuga quaerat recusandae alias culpa possimus odit voluptates excepturi. Fugit totam harum, officiis! Dignissimos, magnam.</p>
+  </div>
+  <br/>
+  <div id="othereditor">
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam eius accusamus sapiente modi quidem voluptatibus soluta tenetur quos qui, esse hic culpa nostrum corrupti, eum, vel nihil dolores est quae?Magni quam distinctio, reprehenderit cupiditate nihil, vel consequatur tenetur mollitia placeat quasi quibusdam laboriosam neque fuga quaerat recusandae alias culpa possimus odit voluptates excepturi. Fugit totam harum, officiis! Dignissimos, magnam.</p>
+  </div>
+
+  <script src="../dist/js/yseditor.min.js"></script>
+
+  <script>
+
+    var myEditor = new ysEditor();
+
+    var otherEditor = new ysEditor({
+      toolbar: [
+        "undo", "redo", "bold", "italic", "underline",
+        "left", "center", "right"
+      ],
+      wrapper: "#othereditor",
+      bottom: true,
+      footer: false
+    });
+
+  </script>
+</body>
+
+</html>

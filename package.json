@@ -1,0 +1,33 @@
+{
+  "name": "yseditor",
+  "version": "0.1.0",
+  "description": "A simple and extensible web editor.",
+  "author": {
+    "name": "Yusuf SEZER",
+    "email": "yusufsezer@mail.com",
+    "url": "http://www.yusufsezer.com/"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yusufsefasezer/ysEditor.js"
+  },
+  "keywords": [
+    "wysiwyg",
+    "editor",
+    "rich-text-editor",
+    "wysiwyg-editor",
+    "text-editor"
+  ],
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-header": "^2.0.5",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.3.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0",
+    "lazypipe": "^1.0.1"
+  }
+}

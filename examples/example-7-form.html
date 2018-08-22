@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Example: FormSend</title>
+  <link rel="stylesheet" href="../dist/css/yseditor.min.css" />
+</head>
+
+<body>
+
+  <form method="post" onsubmit="return send();">
+    <div id="yseditor"></div>
+    <input type="hidden" name="content" id="hidden" />
+    <input type="submit" />
+  </form>
+
+  <script src="../dist/js/yseditor.min.js"></script>
+
+  <script>
+
+    var myEditor = new ysEditor();
+
+    function send() {
+      document.querySelector("#hidden").value = myEditor.getHTML();
+      return true;
+    }
+
+  </script>
+</body>
+
+</html>

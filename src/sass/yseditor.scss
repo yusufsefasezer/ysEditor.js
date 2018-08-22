@@ -1,0 +1,56 @@
+/* Editor */
+$editor-width: auto;
+$editor-border: 1px solid #c4c4c4;
+
+/* Toolbar */
+$toolbar-background: #fafafa;
+$toolbar-button-color: gray;
+$toolbar-button-hover-color: black;
+$toolbar-button-hover-background: #eee;
+
+/* Content */
+$content-padding: 10px;
+
+/* Footer */
+$footer-background: #fafafa;
+
+@mixin no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.yseditor {
+  max-width: $editor-width !important;
+  border: $editor-border;
+  .yseditor-toolbar {
+    padding: 3px;
+    border-bottom: 1px solid #c4c4c4;
+    border-top: 1px solid #c4c4c4;
+    background: $toolbar-background;
+    @include no-select();
+    button {
+      padding: 10px 12px;
+      border: none;
+      background: none;
+      outline: none;
+      color: $toolbar-button-color;
+      &:hover {
+        background-color: $toolbar-button-hover-background;
+        color: $toolbar-button-hover-color;
+      }
+    }
+  }
+  .yseditor-content {
+    padding: $content-padding;
+  }
+  .yseditor-footer {
+    background-color: $footer-background;
+    border-top: 1px solid #c4c4c4;
+    padding: 10px;
+    @include no-select();
+  }
+}
