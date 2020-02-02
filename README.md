@@ -1,7 +1,7 @@
 # ysEditor.js
 A simple, small and extensible WYSIWYG web editor that does not need any plugin.
 
-## [Download](https://github.com/yusufsefasezer/ysEditor.js/archive/master.zip) / [Demo](http://www.yusufsezer.com/projects/ysEditor/) / [yusufsezer.com](http://www.yusufsezer.com)
+## [Download](https://github.com/yusufsefasezer/ysEditor.js/archive/master.zip) / [Demo](http://www.yusufsezer.com/ysEditor.js/examples/example-6-multiple.html) / [yusufsezer.com](http://www.yusufsezer.com)
 
 ## Why should I use ysEditor.js
 * No need any plugin - does not need any plugin or library.
