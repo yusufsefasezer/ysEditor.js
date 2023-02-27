@@ -95,7 +95,7 @@ var myEditor = new ysEditor({
 
   // Footer options
   footer: true,
-  footerText: "Created by Yusuf SEZER"
+  footerText: "Created by Yusuf Sezer"
 });
 ```
 
@@ -214,7 +214,7 @@ Sets the editor html.
 ```javascript
 var myEditor = new ysEditor();
 
-myEditor.setHTML("My name is <b>Yusuf SEZER</b>");
+myEditor.setHTML("My name is <b>Yusuf Sezer</b>");
 ```
 
 #### destroy()
