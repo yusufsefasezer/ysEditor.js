@@ -1,7 +1,7 @@
 # ysEditor.js
 A simple, small and extensible WYSIWYG web editor that does not need any plugin.
 
-## [Download](https://github.com/yusufsefasezer/ysEditor.js/archive/master.zip) / [Demo](https://www.yusufsezer.com/projects/yseditor-js/) / [yusufsezer.com](http://www.yusufsezer.com)
+## [Download](https://github.com/yusufsefasezer/ysEditor.js/archive/master.zip) / [Demo](https://www.yusufsezer.com/projects/yseditor-js/) / [yusufsezer.com](https://www.yusufsezer.com)
 
 ## Why should I use ysEditor.js
 * No need any plugin - does not need any plugin or library.
@@ -51,13 +51,13 @@ It uses a UMD pattern, and should also work in most major module bundlers and pa
 
 ## Working with the Source Files
 
-If you would prefer, you can work with the development code in the `src` directory using the included [Gulp build system](http://gulpjs.com/). This compiles and minifies code.
+If you would prefer, you can work with the development code in the `src` directory using the included [Gulp build system](https://gulpjs.com/). This compiles and minifies code.
 
 ### Dependencies
 Make sure these are installed first.
 
-* [Node.js](http://nodejs.org)
-* [Gulp](http://gulpjs.com) `sudo npm install -g gulp`
+* [Node.js](https://nodejs.org)
+* [Gulp](https://gulpjs.com) `sudo npm install -g gulp`
 
 ### Quick Start
 
@@ -233,4 +233,4 @@ myEditor.destroy();
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details
 
-Created by [Yusuf SEZER](http://www.yusufsezer.com)
+Created by [Yusuf Sezer](https://www.yusufsezer.com)
