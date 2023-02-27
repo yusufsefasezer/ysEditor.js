@@ -1,7 +1,7 @@
 /*!
  * yseditor - A simple and extensible web editor.
  * Author: Yusuf Sezer <yusufsezer@mail.com>
- * Version: v0.1.0
+ * Version: v0.1.1
  * Url: https://github.com/yusufsefasezer/ysEditor.js
  * License: MIT
  */
@@ -44,7 +44,7 @@
 
     // Footer options
     footer: true,
-    footerText: 'Created by Yusuf SEZER'
+    footerText: 'Created by Yusuf Sezer'
   };
 
   //
