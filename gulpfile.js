@@ -1,6 +1,5 @@
 const gulp = require('gulp');
 const del = require('del');
-const lazypipe = require('lazypipe');
 const plumber = require('gulp-plumber');
 const rename = require('gulp-rename');
 const header = require('gulp-header');
@@ -10,7 +9,7 @@ const package = require('./package.json');
 const uglify = require('gulp-uglify');
 
 // Styles
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const minify = require('gulp-clean-css');
 
 var paths = {
@@ -44,25 +43,23 @@ var banner = {
     ' */\n'
 };
 
-gulp.task('clean', function () {
+function clean(resolve) {
   del.sync([paths.output]);
-});
+  resolve();
+}
 
-gulp.task('build:scripts', function () {
-  const jsTasks = lazypipe()
-    .pipe(header, banner.full, { package: package })
-    .pipe(gulp.dest, paths.scripts.output)
-    .pipe(rename, { suffix: '.min' })
-    .pipe(uglify)
-    .pipe(header, banner.min, { package: package })
-    .pipe(gulp.dest, paths.scripts.output)
-
+function buildScripts() {
   return gulp.src(paths.scripts.input)
     .pipe(plumber())
-    .pipe(jsTasks());
-});
+    .pipe(header(banner.full, { package: package }))
+    .pipe(gulp.dest(paths.scripts.output))
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(uglify())
+    .pipe(header(banner.min, { package: package }))
+    .pipe(gulp.dest(paths.scripts.output))
+}
 
-gulp.task('build:styles', function () {
+function buildStyles() {
   return gulp.src(paths.styles.input)
     .pipe(plumber())
     .pipe(sass({
@@ -75,14 +72,13 @@ gulp.task('build:styles', function () {
     .pipe(minify({ level: { 1: { specialComments: 0 } } }))
     .pipe(header(banner.min, { package: package }))
     .pipe(gulp.dest(paths.styles.output));
-});
+}
 
-gulp.task('watch', function () {
-  gulp.watch(paths.input).on('change', function () {
-    gulp.start('default');
-  });
-});
-
-gulp.task('build', ['build:scripts', 'build:styles'])
-
-gulp.task('default', ['clean', 'build']);
+exports.clean = clean;
+exports.buildScripts = buildScripts;
+exports.buildStyles = buildStyles;
+exports.build = gulp.parallel(buildStyles, buildScripts);
+exports.watch = function () {
+  gulp.watch(paths.input, exports.build);
+}
+exports.default = gulp.series(clean, exports.build);

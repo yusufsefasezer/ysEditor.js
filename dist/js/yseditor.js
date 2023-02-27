@@ -1,6 +1,6 @@
 /*!
  * yseditor - A simple and extensible web editor.
- * Author: Yusuf SEZER <yusufsezer@mail.com>
+ * Author: Yusuf Sezer <yusufsezer@mail.com>
  * Version: v0.1.0
  * Url: https://github.com/yusufsefasezer/ysEditor.js
  * License: MIT
@@ -349,10 +349,10 @@
       return editorContent.setHTML(html);
     };
 
-		/**
-		 * Destroy the current initialization.
-		 * @public
-		 */
+    /**
+     * Destroy the current initialization.
+     * @public
+     */
     publicAPIs.destroy = function () {
 
       // if plugin isn't already initialized, stop
