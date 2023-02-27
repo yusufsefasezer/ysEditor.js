@@ -36,7 +36,7 @@
 
     // Footer options
     footer: true,
-    footerText: 'Created by Yusuf SEZER'
+    footerText: 'Created by Yusuf Sezer'
   };
 
   //
