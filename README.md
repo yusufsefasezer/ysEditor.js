@@ -1,6 +1,21 @@
 # ysEditor.js
 A simple, small and extensible WYSIWYG web editor that does not need any plugin.
 
+**ysEditor.js** is an lightweight javascript library that revolutionizes the concept of web editing. This remarkable WYSIWYG web editor stands out from the competition as it requires no additional plugin or library to function seamlessly.
+
+One of the key advantages of ysEditor.js is its unparalleled simplicity. With a user-friendly interface, this editor allows you to effortlessly create and manipulate HTML markup. Whether you are an experienced programmer or a novice, ysEditor.js empowers you to edit web content in a hassle-free manner.
+
+An exceptional feature of ysEditor.js is its extensibility. Unlike other editors that limit your options for customization, ysEditor.js provides developers with the freedom to create custom buttons tailored to their specific needs. This makes ysEditor.js an incredible tool for those seeking complete control over their editing experience.
+
+Furthermore, ysEditor.js places a strong emphasis on customization. With this library, you have the ability to personalize every aspect of the editor, from its overall appearance to the individual buttons at your disposal. This ensures that your editor aligns perfectly with the aesthetics of your website, allowing you to deliver a seamless and cohesive user experience to your audience.
+
+As a **javascript wysiwyg editor**, ysEditor.js stands tall amongst its peers. Its ability to accurately display the edited content in real-time, mimicking the final appearance of the webpage, makes it an indispensable tool for developers and content creators alike. Gone are the days of tediously switching between editing and preview modes – with ysEditor.js, you can immerse yourself in a truly visual editing experience.
+
+Unlike other solutions that rely on javascript editor plugins or libraries, ysEditor.js boasts exceptional efficiency and performance. By eliminating the need for additional plugins or libraries, this editor ensures lightning-fast loading times and supports seamless integration with any project. With ysEditor.js, you can say goodbye to compatibility issues and enjoy a smooth editing experience.
+
+The **rich text editing** capabilities of ysEditor.js are unparalleled. Whether you need to modify fonts, style text, insert media, or create tables, this library provides you with a comprehensive set of tools to accomplish your editing goals. Its interface empowers both experienced developers and casual users to effortlessly transform their ideas into stunning web content.
+
+
 ## [Download](https://github.com/yusufsefasezer/ysEditor.js/archive/master.zip) / [Demo](https://www.yusufsezer.com/projects/yseditor-js/) / [yusufsezer.com](https://www.yusufsezer.com)
 
 ## Why should I use ysEditor.js
